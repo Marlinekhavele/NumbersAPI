@@ -38,8 +38,8 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
   "is_prime": false,
   "is_perfect": false,
   "properties": [
-    "odd",
-    "armstrong"
+    "armstrong",
+    "odd"
   ],
   "digit_sum": 11,
   "fun_fact": "371 is a narcissistic number."
