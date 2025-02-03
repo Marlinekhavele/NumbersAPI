@@ -4,7 +4,7 @@ from app.services.numbers_api import get_number_fact
 from app.services.numbers_utils import classify_number
 import httpx
 
-app = FastAPI(title="Number Classification API")
+app = FastAPI(title="Number API")
 
 # CORS Configuration
 app.add_middleware(

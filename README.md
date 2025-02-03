@@ -3,7 +3,7 @@
 A FastAPI-based microservice that takes a number and returns interesting mathematical properties about it, along with a fun fact.
 
 ## Features
-- Classify numbers as prime ornon-prime
+- Classify numbers as prime or non-prime
 - Identify perfect numbers
 - Determine number even or odd
 - Detect Armstrong numbers
@@ -29,19 +29,23 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 3. Run the server: `uvicorn main:app --reload`
 
 ## Endpoint
-`GET /api/classify-number?number=371`
+`https://numbersapi-production.up.railway.app/api/classify-number?number=371`
 
 ### Example Response
 ```json
 {
-    "number": 371,
-    "is_prime": false,
-    "is_perfect": false,
-    "properties": ["armstrong", "odd"],
-    "digit_sum": 11,
-    "fun_fact": "371 is an Armstrong number"
+  "number": 371,
+  "is_prime": false,
+  "is_perfect": false,
+  "properties": [
+    "odd",
+    "armstrong"
+  ],
+  "digit_sum": 11,
+  "fun_fact": "371 is a narcissistic number."
 }
 ```
 ## Deployment
+[https://numbersapi-production.up.railway.app/docs](https://numbersapi-production.up.railway.app/docs)
 
 
